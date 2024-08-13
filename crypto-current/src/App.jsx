@@ -6,13 +6,15 @@ import Navbar from "./components/Navbar";
 function App() {
 
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<CryptoHome />} />
-        <Route path="/coin/:id" element={<CryptoDetail />} />
-      </Routes>
-    </BrowserRouter>
+    <div className="bg-blue-200">
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<CryptoHome />} />
+          <Route path="/coin/:id" element={<CryptoDetail />} />
+        </Routes>
+      </BrowserRouter>
+    </div>
   )
 }
 
