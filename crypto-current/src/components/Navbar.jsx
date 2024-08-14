@@ -16,7 +16,7 @@ const Navbar = () => {
                     <span className="text-yellow-600">C</span>ypto<span className="text-yellow-500">T</span>rendZ
                 </p>
             </div>
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-2 md:gap-10">
                 <div
                     className="cursor-pointer text-lg md:text-2xl pr-5 transform transition duration-300 hover:scale-105"
                     onClick={() => navigate('/')}
