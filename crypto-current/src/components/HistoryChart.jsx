@@ -48,8 +48,8 @@ const HistoryChart = () => {
 
     const data = {
         labels: coinChartData.map(value => {
-            // Use a more detailed format for the last 24 hours
-            return days === 1 ? moment(value.x).format('HH:mm') : moment(value.x).format('MMM DD');
+            // Use date and time format for the last 7 days
+            return days === 1 ? moment(value.x).format('HH:mm') : days === 7 ? moment(value.x).format('MMM DD, HH:mm') : moment(value.x).format('MMM DD');
         }),
         datasets: [
             {
@@ -63,9 +63,9 @@ const HistoryChart = () => {
     };
 
     return (
-        <div className="border border-2 border-gray-600 mx-1 my-2  md:mx-10 md:my-5 md:p-5">
+        <div className="border border-2 border-gray-600 mx-1 my-2 md:mx-10 md:my-5 md:p-5">
             {/* Buttons to switch between different time ranges */}
-            <div className="flex justify-center mb-4    ">
+            <div className="flex justify-center mb-4">
                 <button
                     className={`px-4 py-2 m-2 ${days === 1 ? 'bg-blue-500 text-white' : 'bg-gray-200'}`}
                     onClick={() => setDays(1)}
