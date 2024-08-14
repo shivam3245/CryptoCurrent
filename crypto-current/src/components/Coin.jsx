@@ -21,7 +21,7 @@ const Coin = ({ coin }) => {
                     <span className="text-xs">({coin.symbol})</span>
                 </div>
                 <div className="flex flex-col items-center w-full pl-8  font-sans text-blue-800 font-bold">
-                    <span className="text-black font-xs font-semibold">Current Rate</span>
+                    <span className="text-black text-xs md:text-sm font-semibold">Current Rate</span>
                     <span>{currencyFormat(coin.current_price)}</span>
                     <span className="text-black text-xs font-semibold">INR</span>
                     <span className="text-xs">{inrFormat(convertToINR(coin.current_price))}</span>
