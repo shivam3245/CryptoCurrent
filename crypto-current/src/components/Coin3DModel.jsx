@@ -18,31 +18,33 @@ function Model(props) {
 
 const Coin3DModel = () => {
     return (
-        <div className="flex flex-col md:flex-row w-full ">
+        <div className="flex flex-col md:flex-row w-full h-[80vh] md:h-[100vh]">
             {/* Left Side - Text */}
             <div className="flex-1 flex items-center justify-center pl-0 md:pl-2 order-2 md:order-1">
-                <h1 className="text-6xl pl-3 pt-3  md:pt-0 md:p-0 md:text-8xl font-bold">
+                <h1 className="text-5xl pl-7 pt-3 md:pt-0 md:p-0 md:text-8xl font-bold">
                     <span className="block text-black md:text-9xl">Welcome</span>
                     <span className="block text-black">to</span>
                     <span className="block text-yellow-600">CryptoTrendZ</span>
-                    <h1 className="text-lg md:text-xl text-gray-500 mt-4 md:mt-5 mb-5">Get Latest trends/chart graphs/current rates
-                        <span className='text-lg ml-2 md:text-xl text-gray-00'>and much more.</span></h1>
+                    <h1 className="text-lg md:text-xl text-gray-500 mt-4 md:mt-5 mb-5">
+                        Get Latest trends/chart graphs/current rates
+                        <span className="text-lg ml-2 md:text-xl mb-5 md:mb-0 text-gray-500">and much more.</span>
+                    </h1>
                 </h1>
             </div>
 
             {/* Right Side - 3D Coin */}
-            <div className="flex-1 h-[0vh] md:h-[90vh] order-1 md:order-2">
+            <div className="flex-1 h-full order-1 md:order-2">
                 <Canvas dpr={[1, 2]} shadows camera={{ fov: 45 }} style={{ height: '100%' }}>
                     <color attach="background" args={['#787569']} />
                     <ambientLight intensity={1} />
                     <PresentationControls speed={1.5} global zoom={0.5} polar={[-0.1, Math.PI / 4]}>
                         <Stage environment={null}>
-                            <Model scale={0.01} />
+                            <Model scale={0.015} />  {/* Increased the scale to make it larger */}
                         </Stage>
                     </PresentationControls>
                 </Canvas>
             </div>
-        </div >
+        </div>
     );
 };
 

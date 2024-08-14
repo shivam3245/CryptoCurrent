@@ -21,7 +21,7 @@ const Trending = () => {
 
     return (
         <div>
-            <div className="bg- max-w-full">
+            <div className="h-full max-w-full">
                 <Coin3DModel />
                 <Graphimg />
             </div>
