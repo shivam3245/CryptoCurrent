@@ -1,5 +1,7 @@
 import useAxios from "../hooks/useAxios";
+import Coin3DModel from "./Coin3DModel";
 import CoinTrending from "./CoinTrending";
+import Graphimg from "./Graphimg";
 import Skeleton from "./Skeleton";
 
 const Trending = () => {
@@ -19,13 +21,18 @@ const Trending = () => {
 
     return (
         <div>
-            {/* <Coin3DModel /> */}
-            <div className="mt-2">
-                <h1 className="text-2xl font-serif font-semibold mb-2 text-center bg-black p-3 text-white">Trending Coins</h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
-                    {response && response.coins.map(coin => (
-                        <CoinTrending key={coin.item.coin_id} coin={coin.item} />
-                    ))}
+            <div className="bg- max-w-full">
+                <Coin3DModel />
+                <Graphimg />
+            </div>
+            <div>
+                <div className="mt-0">
+                    <h1 className="text-md md:text-2xl font-serif font-semibold mb-2 text-center bg-black p-3 text-white">Trending Coins</h1>
+                    <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+                        {response && response.coins.map(coin => (
+                            <CoinTrending key={coin.item.coin_id} coin={coin.item} />
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>

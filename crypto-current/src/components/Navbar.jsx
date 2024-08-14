@@ -6,33 +6,31 @@ const Navbar = () => {
     const navigate = useNavigate();
 
     return (
-        <div className="bg-gradient-to-r from-black to-blue-700 text-white h-14 flex items-center justify-between px-6">
+        <div className="bg-black relative text-white font-semibold h-14 flex items-center justify-between px-4 sm:px-6">
             <div
-                className="flex items-center px-10 gap-2 cursor-pointer transform transition duration-300 hover:scale-105"
+                className="flex items-center gap-2 cursor-pointer transform transition duration-300 hover:scale-105"
                 onClick={() => navigate('/')}
             >
                 <LogoIcon />
-                <p className="font-semibold text-2xl">
-                    <span className="text-yellow-500">C</span>ypto<span className="text-yellow-500">T</span>rendZ
+                <p className="font-semibold text-xl md:text-2xl">
+                    <span className="text-yellow-600">C</span>ypto<span className="text-yellow-500">T</span>rendZ
                 </p>
             </div>
-
-            <div className="flex items-center px-20 text-xl">
+            <div className="flex items-center gap-6">
                 <div
-                    className="cursor-pointer transform transition duration-100 hover:scale-105"
+                    className="cursor-pointer text-lg md:text-2xl pr-5 transform transition duration-300 hover:scale-105"
                     onClick={() => navigate('/')}
                 >
                     Home
                 </div>
-
-                <div className="ml-14 cursor-pointer transform transition duration-100 hover:scale-105">
+                <div className="cursor-pointer text-lg md:text-2xl transform transition duration-300 hover:scale-105">
                     <Link
                         to="Markets"
                         smooth={true}
                         duration={600}
                         offset={-70}
                         activeClass="active"
-                        className="cursor-pointer transform transition duration-300 hover:scale-105"
+
                     >
                         Markets
                     </Link>

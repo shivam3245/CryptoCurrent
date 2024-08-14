@@ -16,12 +16,12 @@ const CoinDetail = () => {
     }
 
     return (
-        <div className='mt-6 pb-5'>
+        <div className='border border-2 border-gray-600 mx-1 my-2 p-2  md:mx-10 md:my-5 md:p-5'>
             <div className='flex gap-2 items-center'>
                 <img src={response.image.small} alt={response.name} />
                 <h1 className='text-2xl mb-2 capitalize font-bold'>{response.name}</h1>
             </div>
-            <p className='mt-6 text-gray-500 [&>a]:text-blue-600 [&>a]:underline' dangerouslySetInnerHTML={{ __html: response.description.en }}></p>
+            <p className='mt-6 text-black text-md md:text-lg font-serif font-semibold [&>a]:text-blue-600 [&>a]:underline' dangerouslySetInnerHTML={{ __html: response.description.en }}></p>
         </div>
     )
 }

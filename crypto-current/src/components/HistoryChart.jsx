@@ -63,7 +63,7 @@ const HistoryChart = () => {
     };
 
     return (
-        <div>
+        <div className="border border-2 border-gray-600 mx-1 my-2  md:mx-10 md:my-5 md:p-5">
             {/* Buttons to switch between different time ranges */}
             <div className="flex justify-center mb-4    ">
                 <button
