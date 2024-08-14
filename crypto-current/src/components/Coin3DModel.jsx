@@ -18,7 +18,7 @@ function Model(props) {
 
 const Coin3DModel = () => {
     return (
-        <div className="flex flex-col md:flex-row w-full h-[80vh] md:h-[100vh]">
+        <div className="flex flex-col md:flex-row w-full h-[80vh] md:h-[90vh]">
             {/* Left Side - Text */}
             <div className="flex-1 flex items-center justify-center pl-0 md:pl-2 order-2 md:order-1">
                 <h1 className="text-5xl pl-7 pt-3 md:pt-0 md:p-0 md:text-8xl font-bold">
