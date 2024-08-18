@@ -58,6 +58,10 @@ const HistoryChart = () => {
                 data: coinChartData.map(val => val.y),
                 borderColor: 'rgb(53, 102, 100)',
                 backgroundColor: 'rgba(75, 192, 192, 0.7)',
+                borderWidth: 1,
+                pointRadius: 2,
+                ponntHoverRadius: 3,
+
             }
         ]
     };
