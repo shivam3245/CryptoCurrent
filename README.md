@@ -1,2 +1,0 @@
-# CryptoCurrent
-//initial

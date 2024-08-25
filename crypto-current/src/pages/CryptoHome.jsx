@@ -1,4 +1,5 @@
 
+import Footer from "../components/Footer"
 import Markets from "../components/Markets"
 import Trending from "../components/Trending"
 
@@ -7,6 +8,7 @@ const CryptoHome = () => {
         <div className="wrapper-container">
             <Trending />
             <Markets />
+            <Footer />
         </div>
     )
 }
