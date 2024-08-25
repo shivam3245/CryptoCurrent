@@ -18,12 +18,12 @@ const Navbar = () => {
             </div>
             <div className="flex items-center gap-2 md:gap-10">
                 <div
-                    className="cursor-pointer text-lg md:text-2xl pr-2 transform transition duration-300 hover:scale-105"
+                    className="cursor-pointer text-lg md:text-2xl pr-5 transform transition duration-300 hover:scale-105"
                     onClick={() => navigate('/')}
                 >
                     Home
                 </div>
-                <div className="cursor-pointer pr-2 text-lg md:text-2xl transform transition duration-300 hover:scale-105">
+                <div className="cursor-pointer text-lg md:text-2xl transform transition duration-300 hover:scale-105">
                     <Link
                         to="Markets"
                         smooth={true}
