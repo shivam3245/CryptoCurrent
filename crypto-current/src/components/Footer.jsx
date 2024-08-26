@@ -23,7 +23,7 @@ function Footer() {
                             <p className="text-sm">
                                 &copy; 2024 Shivam Yadav. All rights reserved.
                             </p>
-                            <p className="text-sm">Supportive Partner ❤️ Shivam</p>
+                            <p className="text-sm">❤️ Shivam</p>
                         </div>
                     </div>
                 </div>
