@@ -25,7 +25,7 @@ const Trending = () => {
                 <Coin3DModel />
                 <Graphimg />
             </div>
-            <div>
+            <div name='Trending' >
                 <div className="mt-0">
                     <h1 className="text-md md:text-2xl font-serif font-semibold mb-2 text-center bg-black p-3 text-white">Trending Coins</h1>
                     <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
