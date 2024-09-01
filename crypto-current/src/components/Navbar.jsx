@@ -8,7 +8,6 @@ import { useState } from "react";
 
 const Navbar = () => {
     const navigate = useNavigate();
-    const [menu, setMenu] = useState(false);
     const [showAuthPage, setShowAuthPage] = useState(false);
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [username, setUsername] = useState("");
