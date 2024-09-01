@@ -13,13 +13,6 @@ const Navbar = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [username, setUsername] = useState("");
 
-    const closeMenu = () => {
-        setMenu(false);
-    };
-    const handleChange = () => {
-        setMenu(!menu);
-    };
-
     const openAuthPage = () => {
         setShowAuthPage(true);
     };
