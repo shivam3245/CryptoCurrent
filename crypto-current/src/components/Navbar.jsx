@@ -4,8 +4,7 @@ import { Link } from 'react-scroll';
 import AuthPage from "./AuthPage";
 import { FaUser } from "react-icons/fa";
 import { useState } from "react";
-import { MdOutlineMenu } from "react-icons/md";
-import { IoClose } from "react-icons/io5";
+
 
 const Navbar = () => {
     const navigate = useNavigate();
