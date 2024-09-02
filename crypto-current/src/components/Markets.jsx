@@ -28,8 +28,8 @@ const Markets = () => {
     }
 
     return (
-        <section name="Markets" className="mt-10 bg-cy">
-            <div className="bg-black p-3 mb-2">
+        <section name="Markets" className="mt-2 bg-cy">
+            <div className="bg-gray-800 p-3 mb-2">
                 <h1 className="text-md md:text-2xl font-serif font-semibold text-white text-center">Markets</h1>
             </div>
 

@@ -32,7 +32,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="bg-black relative text-white font-semibold h-14 flex items-center justify-between px-4 sm:px-6">
+        <div className="bg-black fixed w-full text-white font-semibold h-14 flex items-center justify-between px-4 sm:px-6 z-10">
             <div
                 className="flex items-center gap-2 cursor-pointer transform transition duration-300 hover:scale-105"
                 onClick={() => navigate('/')}
@@ -42,7 +42,7 @@ const Navbar = () => {
                     <span className="text-yellow-600">C</span>ypto<span className="text-yellow-500">T</span>rendZ
                 </p>
             </div>
-            <div className=" flex items-center gap-2 md:gap-10 ">
+            <div className=" flex items-center gap-2 md:gap-5">
                 <div
                     className="cursor-pointer text-md md:text-2xl pr-2 transform transition duration-300 hover:scale-105"
                     onClick={() => navigate('/')}
@@ -72,15 +72,17 @@ const Navbar = () => {
                     </Link>
                 </div>
                 {/* Icons Section */}
-                <div className="hidden lg:block flex items-center gap-5">
+                <div className="hidden lg:block items-center pl-10">
                     <FaUser
                         size={25}
                         onClick={openAuthPage}
                         className="cursor-pointer text-DarkColor"
                     />
+                </div>
+                <div>
                     {isLoggedIn ? (
-                        <div className="flex items-center gap-2">
-                            <span className="text-xl font-medium text-white">
+                        <div className="items-center gap-2">
+                            <span className="text-xl px-2 font-medium text-white">
                                 {username}
                             </span>
                             <button
@@ -100,7 +102,7 @@ const Navbar = () => {
                     )}
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
