@@ -32,7 +32,7 @@ const Navbar = () => {
     }
 
     return (
-        <div className="bg-black fixed w-full text-white font-semibold h-14 flex items-center justify-between px-4 sm:px-6 z-10">
+        <div className="bg-black w-full text-white font-semibold h-14 flex items-center justify-between px-4 sm:px-6 z-10">
             <div
                 className="flex items-center gap-2 cursor-pointer transform transition duration-300 hover:scale-105"
                 onClick={() => navigate('/')}
